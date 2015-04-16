@@ -1,0 +1,347 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  list-style: none;
+}
+/***************************/
+#top-bar {
+  width: 100%;
+  height: 29px;
+  background: white;
+  border-bottom: solid 1px #ededed;
+  background: #fafafa;
+}
+#top-bar .center {
+  width: 1200px;
+  line-height: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#top-bar .ul-l {
+  float: left;
+}
+#top-bar .ul-r {
+  float: right;
+}
+#top-bar li {
+  float: left;
+  padding: 0 10px;
+  background: url("../images/bg65.png") no-repeat;
+  background-position: 0px 9px;
+}
+#top-bar .first {
+  padding-left: 0px;
+  background-image: none;
+}
+#top-bar a {
+  color: #8c8c8c;
+  font-family: 微软雅黑;
+}
+#top-bar a:hover {
+  color: #ba181f;
+}
+#top-bar .bar-site-nav {
+  position: relative;
+  width: 70px;
+}
+#top-bar .bar-site-nav .icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../images/sprites3.png") no-repeat -33px 4px;
+}
+#top-bar .bar-site-nav:hover {
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  padding: 0 9px;
+  background: white;
+}
+#top-bar .bar-site-nav:hover .bar-site-nav-ul {
+  display: block;
+}
+#top-bar .bar-site-nav:hover .icon {
+  background-position: 0px 4px;
+}
+#top-bar .bar-site-nav-ul {
+  position: absolute;
+  display: none;
+  width: 88px;
+  background: white;
+  border: solid 1px #ededed;
+  border-top: none;
+  top: 28px;
+  right: -1px;
+}
+#top-bar .bar-site-nav-ul:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+#top-bar .bar-site-nav-ul li {
+  background: none;
+  line-height: 25px;
+  width: 70px;
+}
+#unlogin_status a {
+  color: #333333;
+  margin-right: 10px;
+}
+#header {
+  width: 100%;
+  height: 118px;
+}
+#header .center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 118px;
+}
+#header .center:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.header-logo {
+  float: left;
+  margin-top: 50px;
+}
+.search-bar {
+  float: left;
+  width: 440px;
+  height: 60px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.search-bar form {
+  float: left;
+}
+.search-bar form:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.search-bar .text {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  width: 346px;
+  border: solid #ca141d 2px;
+  border-right: none;
+  color: #8c8c8c;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-bar .btn {
+  float: left;
+  width: 70px;
+  height: 32px;
+  background: #ca141d;
+  color: white;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.search-bar .btn:hover {
+  background: #d5434a;
+}
+.search-bar .search-hot {
+  width: 440px;
+  height: 26px;
+  line-height: 26px;
+}
+.search-bar .search-hot:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.search-bar dt,
+.search-bar dd {
+  float: left;
+}
+.search-bar b {
+  color: #8c8c8c;
+  font-weight: normal;
+  font-family: 微软雅黑;
+}
+.search-bar a {
+  color: #8c8c8c;
+  font-family: 微软雅黑;
+  margin-left: 10px;
+}
+.search-bar a:hover {
+  color: #ba181f;
+}
+.mine {
+  width: 201px;
+  height: 30px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 10px;
+  border: solid 1px #ededed;
+  border-bottom: none;
+}
+.mine .gap-line {
+  display: block;
+  width: 1px;
+  height: 12px;
+  float: left;
+  background: #ededed;
+  margin-top: 10px;
+}
+.mine .plz-login {
+  position: absolute;
+  left: -1px;
+  width: 201px;
+  height: 35px;
+  line-height: 35px;
+  border: solid 1px #ededed;
+  border-top: none;
+  display: none;
+}
+.mine .plz-login span {
+  margin-right: 10px;
+  font-family: 微软雅黑;
+  color: #8c8c8c;
+}
+.mine .plz-login a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.mine .ul {
+  display: none;
+  position: absolute;
+  width: 201px;
+  top: 66px;
+  left: -1px;
+  border: solid 1px #ededed;
+}
+.mine .ul:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.mine .ul li {
+  float: left;
+  width: 100px;
+  height: 30px;
+}
+.mine .ul .gap-line-r {
+  border-right: solid 1px #ededed;
+}
+.mine .mine-basket-show {
+  display: none;
+}
+.mine-mall,
+.mine-basket {
+  width: 100px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  border-bottom: solid 1px #ededed;
+}
+.mine-mall .icon,
+.mine-basket .icon {
+  display: inline-block;
+  width: 6px;
+  height: 3px;
+  background: url("../images/icon1.png") no-repeat -234px -2px;
+  margin-left: 10px;
+  margin-top: 14px;
+  vertical-align: top;
+}
+.mine-mall a,
+.mine-basket a {
+  color: #8c8c8c;
+  font-family: 微软雅黑;
+  color: #333333;
+}
+.mine-mall a:hover,
+.mine-basket a:hover {
+  color: #ba181f;
+}
+.mine-mall a:hover,
+.mine-basket a:hover {
+  text-decoration: underline;
+}
+.mine-mall:hover {
+  border-right: solid 1px #ededed;
+  border-bottom-color: white;
+  margin-right: -1px;
+}
+.mine-mall:hover .plz-login {
+  display: block;
+}
+.mine-mall:hover ul {
+  display: block;
+}
+.mine-mall:hover .icon {
+  background-position: -234px 0px;
+}
+.mine-basket:hover {
+  border-bottom-color: white;
+}
+.mine-basket:hover .mine-basket-show {
+  display: block;
+}
+.mine-basket-show {
+  display: none;
+  width: 468px;
+  min-height: 100px;
+  border: solid 1px #ededed;
+  position: absolute;
+  right: -1px;
+  top: 30px;
+  background: white;
+}
+.mine-basket-show p {
+  color: #8c8c8c;
+  background: url("../images/icon1.png") no-repeat -265px 0px;
+  width: 50%;
+  text-align: left;
+  text-indent: 50px;
+  margin: 40px auto;
+}
+/*******/
+.a-1 {
+  color: #8c8c8c;
+  font-family: 微软雅黑;
+}
+.a-1:hover {
+  color: #ba181f;
+}
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.clear-f:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.show-border {
+  border: solid 1px red;
+}
+/***************************/
+/***************************/
