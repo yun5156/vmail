@@ -321,6 +321,33 @@
   text-indent: 50px;
   margin: 40px auto;
 }
+#two-dimension {
+  width: 90px;
+  height: 80px;
+  float: right;
+  margin-top: 38px;
+}
+#two-dimension .Viwepager-items {
+  float: left;
+}
+#two-dimension .Viwepager-flags {
+  float: right;
+  width: 10px;
+  height: 50px;
+}
+#two-dimension span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0;
+}
+.over-flag-class {
+  background: orange !important;
+}
 /*******/
 .a-1 {
   color: #8c8c8c;
