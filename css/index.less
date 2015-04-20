@@ -69,6 +69,7 @@
     border-top: none;
     top: 28px;
     right: -1px;
+    z-index: 10;
     .clear-f;
     li{
       background:none;
@@ -247,6 +248,7 @@
     }
     ul{
       display: block;
+      background: white;
     }
     .icon{
       background-position: -234px 0px;
@@ -293,7 +295,7 @@
   width: 90px;
   height: 80px;
   float: right;
-  margin-top: 118px - 80px;
+  margin-top: 20px;
   .Viwepager-items{
     float: left;
   }
@@ -301,7 +303,6 @@
     float: right;
     width: 10px;
     height: 50px;
-
   }
   span{
      display: block;
@@ -315,13 +316,212 @@
    }
 
   P{
-
+    clear: both;
+    font-size: 10px;
   }
 }
 .over-flag-class{
   background: orange !important;
 }
+
+#nav{
+  width: 100%;
+  height: 40px;
+  background: @color-3;
+  .center{
+    .align-center;
+    width: @main-width;
+    height: 40px;
+
+  }
+}
+.nav-list{
+  margin-left: 218px;
+  li{
+    float: left;
+    &:hover{
+      background: @color-1;
+    }
+  }
+  a{
+    padding: 0 30px;
+    height: 40px;
+    line-height: 39px;
+    display: block;
+    color: white;
+    font: @font-1;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+.nav-category{
+  position: absolute;
+  z-index: 20;
+  width: 218px;
+  height: 438px;
+  background: #e63547;
+  border: @border-3;
+  >dt{
+    height: 38px;
+    border-bottom: solid 1px #da3243;
+    font: @font-2;
+    line-height: 38px;
+    padding-left: 15px;
+    color: white;
+  }
+  >dd{
+    position: relative;
+    width: 206px;
+    height: 50px;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-top: 7px;
+    cursor: hand;
+    //.f-transition(background);
+    h3{
+      font: @font-2;
+      color: white;
+      margin-bottom: 5px;
+    }
+    >a{
+      color: #ffb7ba;
+      margin-right: 5px;
+    }
+    .icon{
+      display: none;
+      position: absolute;
+      width: 7px;
+      height: 13px;
+      background: url("../images/icon1.png") no-repeat -98px -47px;
+      top: 20px;
+      right: 8px;
+    }
+
+    &:hover{
+      background: white;
+
+      >h3{
+
+        color: #e63547;
+      }
+      >a{
+
+        color: #d59698;
+      }
+      .icon{
+        display: block;
+      }
+      .nav-category-ul{
+        display: block;
+      }
+    }
+
+  }
+  .nth-1,.nth-2{
+    top: -1px;
+  }
+  .nth-3{
+    top: -1px;
+  }
+  .nth-4{
+    top: -138px;
+  }
+  .nth-5{
+    top: -125px;
+  }
+  .nth-6{
+    top: -86px;
+  }
+  .nth-7{
+    top: -26px;
+  }
+}
+
+.nav-category-ul{
+  display: none;
+  position: absolute;
+  width: 180px;
+  left: 216px;
+  background: white;
+  padding: 15px 0px;
+  border-top: @border-1;;
+  border-right: @border-1;
+  border-bottom: @border-1;
+
+  li{
+    float: left;
+    background: white;
+
+    >a{
+      display: block;
+      padding: 0 25px;
+      width: 130px;
+      height: 35px;
+      font: normal 14px 微软雅黑;
+      color: gray;
+      line-height: 38px;
+    }
+    &:hover{
+      background: rgb(239,234,234);
+    }
+  }
+  h4{
+    float: left;
+    width: 130px;
+    height: 22px;
+    background: @color-0;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    color: white;
+  }
+  >a{
+    float: left;
+    display: block;
+    width: 130px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+    color: @color-2;
+  }
+}
+#banner{
+  background: #f6f6f6;
+  .center{
+    .align-center;
+    width: @main-width;
+    height: 400px;
+    background: yellow;
+  }
+}
+#focus-pic{
+  width: 980px;
+  height: 400px;
+  margin-left: 220px;
+  position: relative;
+
+  .Viwepager-flags{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    span{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      font-size: 0;
+      background: white;
+      margin-right: 10px;
+    }
+  }
+}
 /*******/
+.f-transition(@attr,@dutation:0.25s){
+  transition:@attr @dutation;
+  -moz-transition:@attr @dutation; /* Firefox 4 */
+  -webkit-transition:@attr @dutation; /* Safari and Chrome */
+  -o-transition:@attr @dutation; /* Opera */
+}
 .a-1{
   color: @color-2;
   font-family: @font-1;
@@ -348,7 +548,7 @@
 }
 /***************************/
 @color-0:rgb(230,53,71);
-@color-1:rgb(202,20,29);
+@color-1:#ca141d;
 @color-2:#8c8c8c;
 @color-3:#ba181f;
 @color-4:#333;
@@ -357,10 +557,12 @@
 @color-7:#d5434a;
 
 @font-1:微软雅黑;
+@font-2:normal 16px @font-1;
 @main-width:1200px;
 @gap-1:10px;
 @border-1:solid 1px @color-5;
 @border-2:solid 1px red;
+@border-3:solid 1px #f86675;
 
 @url-1:url("../images/icon1.png");
 /***************************/
