@@ -537,7 +537,151 @@
   background: white;
   margin-right: 10px;
 }
+#cabinet {
+  width: 100%;
+}
+#cabinet .center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+.cabinet-row-1 {
+  width: 1200px;
+  height: 312px;
+  margin: 15px auto;
+}
+.cabinet-row-1 > ul {
+  float: left;
+  width: 904px;
+}
+.cabinet-row-1 > ul:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.cabinet-row-1 .wrap-goods-1 {
+  width: 450px;
+  height: 312px;
+  float: left;
+  background: #f8f8f8;
+}
+.cabinet-row-1 .wrap-goods-2 {
+  width: 442px;
+  height: 304px;
+  background: #f8f8f8;
+  position: relative;
+}
+.cabinet-row-1 .aimg-1 {
+  float: left;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.cabinet-row-1 .describe {
+  float: left;
+  height: 180px;
+  width: 200px;
+  position: relative;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.cabinet-row-1 .describe .text-1 {
+  margin-bottom: 16px;
+}
+.cabinet-row-1 .describe .box {
+  position: absolute;
+  bottom: 0px;
+}
+.cabinet-row-1 .describe .text-price {
+  margin-right: 10px;
+}
+.cabinet-row-1 .icon-hot-sale {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+.cabinet-row-1 .cabinet-row-1-2 {
+  margin-left: -1px;
+}
+.cabinet-row-1 .cabinet-row-1-2 .wrap-goods-2 {
+  background: #e2f9fb;
+  border-color: #e2f9fb;
+}
+.cabinet-row-1 .cabinet-row-1-2 .wrap-goods-2:hover {
+  border-color: #efcacc;
+}
+.cabinet-row-1 .cabinet-row-1-2 .text-3 {
+  margin-top: 10px;
+}
+.cabinet-row-1-ad {
+  float: right;
+  width: 278px;
+  height: 312px;
+  border: solid 1px #ededed;
+}
 /*******/
+.aimg-1 {
+  display: inline-block;
+  width: 157px;
+  height: 252px;
+}
+.wrap-goods-1 {
+  border: solid 1px #ededed;
+  background: white;
+}
+.wrap-goods-2 {
+  background: white;
+  border: solid 4px #f8f8f8;
+  transition: border-color 0.25s;
+  -moz-transition: border-color 0.25s;
+  /* Firefox 4 */
+  -webkit-transition: border-color 0.25s;
+  /* Safari and Chrome */
+  -o-transition: border-color 0.25s;
+  /* Opera */
+}
+.wrap-goods-2:hover {
+  border-color: #efcacc;
+}
+.text-1 {
+  font: normal 26px 微软雅黑;
+  color: black;
+}
+.text-2 {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+.text-3 {
+  font-size: 14px;
+  color: #ca141d;
+}
+.text-price {
+  font: normal 20px 微软雅黑;
+  color: #e01d20;
+}
+.btn-1 {
+  display: inline-block;
+  width: 78px;
+  background: #e01d20;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  border: solid 1px #b3131a;
+}
+.btn-1:hover {
+  background: #f0333c;
+}
+.icon-hot-sale {
+  display: block;
+  width: 63px;
+  height: 58px;
+  background: url("../images/1382542488099.png") no-repeat;
+}
 .a-1 {
   color: #8c8c8c;
   font-family: 微软雅黑;
@@ -555,6 +699,9 @@
   display: block;
   clear: both;
   visibility: hidden;
+}
+.d-b {
+  display: block;
 }
 .show-border {
   border: solid 1px red;
