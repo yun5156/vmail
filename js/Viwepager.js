@@ -5,16 +5,18 @@ function Viwepager(config) {
 		height:'100px',
 		imgs:[{src:'',link:'',alt:''},{src:'',link:'',alt:''},{src:'',link:'',alt:''}],
 		delay:3000,
-        action:'mouseover',
         duration:'slow',
         currentFlagClass:'over-flag-class'
 	}*/
+
+
+    var _this=this;
 
 	var width=config.width||'100px',
 		height=config.height||'100px',
 		imgs=config.imgs||[],
 		delay=config.delay||3000,
-        action=config.action||'mouseover',
+        //action=config.action||'mouseover',
         duration=config.duration||'slow',
         overFlag=config.overFlag||null;
 
@@ -52,8 +54,11 @@ function Viwepager(config) {
                 .attr({
                     index: i.toString()
                 })
-                .on(action, function () {
-                    change();
+                .on('mouseover', function () {
+                    change($(this).attr('index'));
+                })
+                .on('mouseout', function () {
+                    _this.play();
                 })
                 .appendTo($flags);
 		}
@@ -76,8 +81,9 @@ function Viwepager(config) {
 	var change=function (nth) {
         var $currentImg;
         if(nth){
-            console.log(nth,5555555);
+            //console.log(nth,5555555);
             $currentImg=$items.find("[index="+nth+"]");
+            _this.pause();
         }else{
             $currentImg=$items.find(':first');
         }
@@ -98,7 +104,6 @@ function Viwepager(config) {
             $flags.children("[index="+$currentImg.attr('index')+"]").addClass(overFlag);
 
         }
-
         $text.html($currentImg.attr('alt'));
 	};
 
