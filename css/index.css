@@ -69,7 +69,7 @@
   background-position: 0px 4px;
 }
 #top-bar .bar-site-nav-ul {
-  position: absolute;
+  position: relative;
   display: none;
   width: 88px;
   background: white;
@@ -660,17 +660,113 @@
   height: 312px;
   border: solid 1px #ededed;
 }
-.cabinet-row-1-r .ad-info {
-  width: 276px;
-  height: 158px;
-  border: solid 1px #ededed;
-  margin-top: 20px;
-}
 .cabinet-row-1-r .ad-img {
   width: 276px;
   height: 130px;
   border: solid 1px #ededed;
   margin-top: 20px;
+}
+.todo-ad-info {
+  width: 276px;
+  height: 158px;
+  border: solid 1px #ededed;
+  margin-top: 20px;
+}
+.todo-ad-info .ad-info-title-1:hover {
+  background: white;
+}
+.todo-ad-info .ad-info-title-1:hover .ad-info-list-1 {
+  display: block;
+}
+.todo-ad-info .ad-info-title-1:hover .ad-info-list-2 {
+  display: none;
+}
+.todo-ad-info .ad-info-title-2:hover {
+  background: white;
+}
+.todo-ad-info .ad-info-title-2:hover .ad-info-list-1 {
+  display: none;
+}
+.todo-ad-info .ad-info-title-2:hover .ad-info-list-2 {
+  display: block;
+}
+.todo-ad-info .ad-info-title li {
+  width: 50%;
+  height: 30px;
+  float: left;
+  background: #fcf7f7;
+  line-height: 30px;
+  text-align: center;
+}
+.todo-ad-info .ad-info-title a {
+  color: #838181;
+}
+.todo-ad-info .ul-content {
+  width: 270px;
+  height: 110px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.todo-ad-info .ul-content li {
+  width: 275px;
+  height: 22px;
+  background: url("../images/icon28.png") no-repeat 0px 6px;
+  text-indent: 20px;
+}
+.todo-ad-info .ul-content a {
+  color: #9c9590;
+  text-overflow: ellipsis;
+}
+.todo-ad-info .ul-content a:hover {
+  color: #e63547;
+}
+.todo-ad-info .ad-info-list-2 {
+  display: none;
+}
+#viweshow-1 {
+  position: relative;
+}
+.viweshow-1-btn {
+  background: url("../images/sprites3.png") no-repeat -17px -24px;
+  display: block;
+  width: 17px;
+  height: 28px;
+  border-radius: 3px;
+  font-size: 0;
+  position: absolute;
+  top: 45%;
+}
+#viweshow-1 .btn-prev {
+  background: url("../images/sprites3.png") no-repeat -17px -24px;
+  display: block;
+  width: 17px;
+  height: 28px;
+  border-radius: 3px;
+  font-size: 0;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+}
+#viweshow-1 .btn-prev:hover {
+  background-color: rgba(191, 191, 191, 0.8);
+  background-position: -37px -24px;
+}
+#viweshow-1 .btn-next {
+  background: url("../images/sprites3.png") no-repeat -17px -24px;
+  display: block;
+  width: 17px;
+  height: 28px;
+  border-radius: 3px;
+  font-size: 0;
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  background-position: 4px -24px;
+}
+#viweshow-1 .btn-next:hover {
+  background-color: rgba(191, 191, 191, 0.8);
+  background-position: -56px -24px;
 }
 .cabinet-row-2 {
   width: 1200px;

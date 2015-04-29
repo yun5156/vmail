@@ -37,19 +37,34 @@ $(function () {
         ],
         delay:5000,
         duration:'slow',
-        overFlag:'over-flag-class'/**/
+        overFlag:'over-flag-class'
     });
 
     vp3.createTo($('.cabinet-row-2'));
 
 
-    var viweshow1=new Viweshow({
-        width:'276px',
-        height:'312px',
-        imgs:[{src:'images/ads/1.jpg',link:'',alt:''},{src:'images/ads/2.jpg',link:'',alt:''},{src:'images/ads/3.jpg',link:'',alt:''}],
-        auto:5000,
-        transition:'slow'
+    var vs=new Viweshow({
+        width: 276,
+        height: 312,
+        imgs: [
+            {
+                src: 'images/ads/1.jpg',
+                link: '',
+                alt: ''
+            },
+            {
+                src: 'images/ads/2.jpg',
+                link: '',
+                alt: ''
+            },
+            {
+                src: 'images/ads/3.jpg',
+                link: '',
+                alt: ''
+            }
+        ],  auto: 5000,
+        transition: 'slow'
     });
 
-    viweshow1.createTo($('#viweshow-1'));
+    vs.createTo($('#viweshow-1'));
 });
