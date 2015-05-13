@@ -8,8 +8,8 @@
     font-size: 12px;
     color: black;
     list-style: none;
-
 }
+
 /***************************/
 
 #top-bar {
@@ -625,25 +625,6 @@
     border: @border-1;
     margin-top: 20px;
 
-    .ad-info-title-1:hover{
-        background: white;
-        .ad-info-list-1{
-            display: block;
-        }
-        .ad-info-list-2{
-            display: none;
-        }
-    }
-    .ad-info-title-2:hover{
-        background: white;
-        .ad-info-list-1{
-            display: none;
-        }
-        .ad-info-list-2{
-            display: block;
-        }
-    }
-
     .ad-info-title li{
         width: 50%;
         height: 30px;
@@ -682,6 +663,73 @@
         display: none;
     }
 }
+.storey-1{
+  width: @main-width;
+  .title{
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  h3.text-1{
+    font-size: 18px; font-weight:bold;float: left; border-left: 4px solid #c82c2c;padding-left: 10px;margin-top: 10px;
+  }
+  small.text-2{
+    float: left;margin-left: 10px;
+  }
+  span{
+    float: right;
+    a{
+      .a-1;
+    }
+  }
+
+  ul.list-box{
+    width: @main-width;
+
+    a.aimg-2{
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    .info{
+      position: relative;
+      width: 250px;
+      height: 200px;
+      margin-top: 40px;margin-right: 50px;
+      .text-2{ margin-top: 18px;}
+      .text-3{ margin-top: 10px;}
+      .price{ position: absolute;bottom: 10px;}
+      .text-price{ margin-right: 20px; }
+    }
+  }
+  .wrap{
+    border: @border-1;
+    float: left;
+    height: 320px;
+    width: (@main-width / 2) - 2;
+    .box{
+      position: relative;
+      background: #f8f8f8;
+      width: 590px;
+      height: 312px;
+      border: solid #f8f8f8 4px;
+      .f-transition(border);
+      &:hover{
+        border-color: #d59698;
+      }
+    }
+  }
+  .li-1{
+
+  }
+
+  .wrap2{
+    width: (@main-width / 4) - 2;
+    .box{
+      width: 290px;
+      height: 312px;
+    }
+  }
+}
 
 
 #viweshow-1{position: relative;}
@@ -710,55 +758,56 @@
         }
     }
 }
+
 /*******/
+.fl{float: left;}
+.fr{float: right;}
 .aimg-1{display: inline-block;width: 157px;height: 252px;}
 .aimg-2{display: block;}
 .wrap-goods-content{background: white; border: solid 4px #f8f8f8;.f-transition(border-color);}
 .text-1{ font: normal 26px 微软雅黑;color: black;}
 .text-2{ font-size: 14px; color: #8c8c8c;}
 .text-3{font-size: 14px; color: #ca141d;}
-.text-price{ font: normal 20px @font-1; color: #e01d20;}
+.text-price{ font: normal 20px @font-1; color: #e01d20;vertical-align: middle;}
 .btn-1{ display: inline-block; width: 78px; background: #e01d20; height: 30px;color: white; border-radius: 3px; text-align: center; line-height: 30px;font-family: @font-1; font-size: 14px; border: solid 1px #b3131a;}
 .btn-1:hover{ background: #f0333c;}
 .icon-hot-sale{position: absolute;left: -5px;top: -5px;display: block; width: 63px;height: 58px; background: url("../images/1382542488099.png") no-repeat;}
 .f-transition(@attr,@dutation: 0.25s) {transition: @attr @dutation;-moz-transition: @attr @dutation;/* Firefox 4 */-webkit-transition: @attr @dutation;/* Safari and Chrome */-o-transition: @attr @dutation;/* Opera */}
 //.wrap-1(@w,@h,@b:@border-1){width: @w;height: @h;border: @b;}
 .a-1 {
-    color: @color-2;
-    font-family: @font-1;
-    &:hover {
-        color: @color-3;
-    }
+  color: @color-2;
+  font-family: @font-1;
+  &:hover {
+    color: @color-3;
+  }
 }
 
 .align-center {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clear-f {
-    &:after {
-        content: ".";
-        height: 0;
-        display: block;
-        clear: both;
-        visibility: hidden;
-    }
+  &:after {
+    content: ".";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
 }
 .d-b{
-    display: block;
+  display: block;
 }
 .show-border {
-    border: @border-2;
+  border: @border-2;
 }
 
 
 
 /***************************/
 @cabinet-row-height:312px;
-@color-0: rgb(230,
-53,
-71);
+@color-0: rgb(230,53,71);
 @color-1: #ca141d;
 @color-2: #8c8c8c;
 @color-3: #ba181f;
